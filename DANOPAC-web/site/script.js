@@ -54,30 +54,31 @@ const products = {
   'dawsy-slim': {
     name: 'Dawsy Slim', category: 'Cosméticos', pill: 'pill-cosmetico', image: 'assets/dawsy-slim-large.png',
     description: 'Crema adelgazante, demoledora de grasa y anticelulítica para complementar el cuidado corporal.',
-    detail: 'Su ficha técnica incluye algas marinas, mentol, extractos vegetales y sales yodadas, además de vitaminas A, C y E.'
+    detail: 'Incluye algas marinas, mentol, extractos vegetales y sales yodadas, además de vitaminas A, C y E.'
   },
   'dawrely-fem': {
     name: 'Dawrely Fem', category: 'Cosméticos', pill: 'pill-cosmetico', image: 'assets/dawrely-fem-large.png',
     description: 'Lavado íntimo con ácido láctico, diseñado para mantener el equilibrio del pH y brindar frescura y bienestar.',
-    detail: 'Contiene ácido láctico, mentol cristal y alumbre potásico. Uso externo.'
+    detail: 'Contiene ácido láctico y mentol cristal. Uso externo.'
   },
   'dawrely-straits': {
     name: 'Dawrely Straits', category: 'Cosméticos', pill: 'pill-cosmetico', image: 'assets/dawrely-straits-large.png',
-    description: 'Lavado íntimo con alumbre para una mayor sensación de firmeza, limpieza profunda y frescura.',
-    detail: 'Contiene alumbre potásico, ácido bórico, mentol cristal y una base limpiadora suave. Uso externo.'
+    description: 'Lavado íntimo con alumbre para una mayor sensación de firmeza, limpieza profunda, frescura y efecto astringente.',
+    detail: 'Contiene alumbre potásico, mentol cristal y una base limpiadora suave. Uso externo.'
   },
   plopiee: {
     name: "P'lopiee", category: 'Cosméticos', pill: 'pill-cosmetico', image: 'assets/plopiee.png',
     description: 'Crema refrescante que ayuda a aliviar la sensación de cansancio y pesadez en pies y piernas.',
     detail: 'Contiene mentol, castaño de Indias y hamamelis. Aplicar mediante un suave masaje en pies y piernas.'
   },
-  'nova-b': {
-    name: 'Nova B Forte-K', category: 'Éticos', pill: 'pill-etico', art: 'NOVA B|FORTE-K',
+'nova-b': {
+    name: 'Nova B Forte-K', category: 'Éticos', pill: 'pill-etico', image: 'assets/Novabfortekfoto.png',
     description: 'Combinación analgésica y antiinflamatoria de diclofenaco potásico con complejo vitamínico B1, B6 y B12.',
     detail: 'Producto del portafolio ético de DANOPAC. Consulta disponibilidad y presentación con un asesor.'
   },
+  
   'stop-grip': {
-    name: 'Stop Grip', category: 'Éticos', pill: 'pill-etico', art: 'STOP|GRIP',
+    name: 'Stop Grip', category: 'Éticos', pill: 'pill-etico', images: ['assets/STOPGRIPJARABE.png', 'assets/Stopgripcap.png'],
     description: 'Línea especializada en el alivio integral de síntomas de gripe, resfriados y congestión nasal.',
     detail: 'El material corporativo presenta formatos jarabe y sachet. Consulta disponibilidad con un asesor.'
   }
