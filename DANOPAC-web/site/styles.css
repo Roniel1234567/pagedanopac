@@ -165,6 +165,22 @@ h1 em, h2 em { color: var(--red); font-family: 'DM Serif Display', Georgia, seri
 .product-image-plopiee { background: #e1f3fb; }
 .product-image-plopiee::after { background: #8dd5ef; }
 .product-image-plopiee img { height: 215px; }
+
+/* 👇 esto es lo nuevo que agregas */
+.product-image-nova { background: #e8eaf7; }
+.product-image-nova::after { background: #7389d9; }
+.product-image-nova img { 
+  height: 200px; 
+  mix-blend-mode: multiply; 
+}
+
+.product-image-stop { background: #fdeae8; }
+.product-image-stop::after { background: #ef6a5a; }
+.product-image-stop img { 
+  height: 190px; 
+  mix-blend-mode: multiply; 
+}
+
 .product-info { padding: 16px 20px 21px; }
 .product-info h3 { color: var(--navy); font-size: 16px; letter-spacing: -.03em; margin-bottom: 7px; }
 .product-info p { min-height: 46px; color: var(--muted); font-size: 11px; line-height: 1.6; margin-bottom: 17px; }
