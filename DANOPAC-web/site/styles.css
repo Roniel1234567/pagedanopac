@@ -358,6 +358,23 @@ h1 em, h2 em { color: var(--red); font-family: 'DM Serif Display', Georgia, seri
   .product-image img { height: 143px; }
   .product-image-dawsy img { height: 150px; }
   .product-image-sachet img, .product-image-fiber img { height: 130px; }
+
+.product-image-sachet img { height: 130px; }
+
+.product-image-fiber,
+.product-image-stop {
+  gap: 4px;
+  padding: 0 4px;
+}
+.product-image-fiber img,
+.product-image-stop img {
+  height: 90px;
+  max-width: 48%;
+  width: auto;
+  object-fit: contain;
+}
+
+  
   .product-image-slim img, .product-image-plopiee img { height: 147px; }
   .product-info { padding: 12px 12px 16px; }
   .product-info h3 { font-size: 12px; }
