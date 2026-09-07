@@ -276,6 +276,13 @@ h1 em, h2 em { color: var(--red); font-family: 'DM Serif Display', Georgia, seri
 .modal-close { position: absolute; z-index: 2; top: 13px; right: 15px; width: 31px; height: 31px; border: 0; border-radius: 50%; color: var(--navy); background: rgba(255,255,255,.78); font-size: 22px; line-height: 1; }
 .modal-product-image { min-height: 370px; display: flex; align-items: center; justify-content: center; padding: 35px; background: var(--paper); }
 .modal-product-image img { max-height: 320px; width: auto; filter: drop-shadow(0 20px 14px rgba(5,30,42,.15)); }
+.modal-product-image {
+  gap: 0;
+}
+.modal-product-image img {
+  margin: 0 -20px;
+}
+
 .modal-product-image.modal-art { color: white; background: var(--navy); }
 .modal-product-image.modal-art span { font-size: 36px; font-weight: 800; letter-spacing: -.07em; line-height: .9; text-align: center; }
 .modal-product-copy { padding: 52px 38px 36px; }
