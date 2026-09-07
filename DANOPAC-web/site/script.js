@@ -67,7 +67,7 @@ const products = {
     detail: 'Contiene alumbre potásico, mentol cristal y una base limpiadora suave. Uso externo.'
   },
   plopiee: {
-    name: "P'lopiee", category: 'Cosméticos', pill: 'pill-cosmetico', image: 'assets/Plopiee2.png',
+    name: "P'lopiee", category: 'Cosméticos', pill: 'pill-cosmetico', image: 'assets/Plopiee3.png',
     description: 'Crema refrescante que ayuda a aliviar la sensación de cansancio y pesadez en pies y piernas.',
     detail: 'Contiene mentol, castaño de Indias y hamamelis. Aplicar mediante un suave masaje en pies y piernas.'
   },
