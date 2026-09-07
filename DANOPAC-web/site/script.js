@@ -149,7 +149,7 @@ if (contactForm) {
     const type = formData.get('type');
     const message = formData.get('message');
     const text = `Hola DANOPAC, soy ${name}.%0A%0ATipo de consulta: ${type}.%0ACorreo: ${email}.%0A%0A${message}`;
-    window.open(`https://wa.me/18097246440?text=${text}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/18495717606?text=${text}`, '_blank', 'noopener,noreferrer');
     formStatus.textContent = 'Abriendo WhatsApp para enviar tu mensaje...';
     contactForm.reset();
   });
