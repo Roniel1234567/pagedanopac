@@ -157,7 +157,7 @@ h1 em, h2 em { color: var(--red); font-family: 'DM Serif Display', Georgia, seri
 
 
 
-.product-image-fiber img { height: 110px; }
+.product-image-fiber img { height: 190px; }
 .product-image-slim { background: #f5e4ef; }
 .product-image-slim::after { background: #d99abd; }
 .product-image-slim img { height: 209px; }
