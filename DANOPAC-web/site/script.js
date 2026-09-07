@@ -35,20 +35,21 @@ filterButtons.forEach((button) => {
 });
 
 const products = {
-'dawsy-fibra': {
-    name: 'Dawsy Fibra', category: 'Naturales', pill: 'pill-natural', image: 'assets/Fi130gr2.png', image: 'assets/Fibra340.png,
-    description: 'Fibra natural en polvo para acompañar la digestión y el control de peso.',
-    detail: 'Disponible en sabores manzana, piña, vainilla, fresa y naranja. Presentaciones de 130 g y 340 g.'
+  dawsy: {
+    name: 'Dawsy Quema grasa', category: 'Naturales', pill: 'pill-natural', image: 'assets/dawsy-capsulas.png',
+    description: 'Línea especializada en la pérdida de peso que combina eficacia y control metabólico para acompañar tu bienestar general.',
+    detail: 'Fórmula natural de linaza en cápsulas. Disponible en presentaciones de 45, 90 y 100 cápsulas.'
   },
   'dawsy-sachet': {
     name: 'Dawsy Sachet', category: 'Naturales', pill: 'pill-natural', image: 'assets/dawsy-sachet-fresa.png',
     description: 'Una presentación práctica para llevar a cualquier lugar y disfrutar tu rutina de bienestar.',
     detail: 'Disponible en sabores fresa y naranja cada caja contiene 25 sobres.'
   },
-  'dawsy-fibra': {
-    name: 'Dawsy Fibra', category: 'Naturales', pill: 'pill-natural', image: 'assets/Fi130gr2.png', image: 'assets/Fibra340.png,
+'dawsy-fibra': {
+    name: 'Dawsy Fibra', category: 'Naturales', pill: 'pill-natural', images: ['assets/Fi130gr2.png', 'assets/Fibra340.png'],
     description: 'Fibra natural en polvo para acompañar la digestión y el control de peso.',
     detail: 'Disponible en sabores manzana, piña, vainilla, fresa y naranja. Presentaciones de 130 g y 340 g.'
+  
   },
   'dawsy-slim': {
     name: 'Dawsy Slim', category: 'Cosméticos', pill: 'pill-cosmetico', image: 'assets/dawsy-slim-large.png',
@@ -80,6 +81,7 @@ const products = {
     description: 'Línea especializada en el alivio integral de síntomas de gripe, resfriados y congestión nasal.',
     detail: 'El material corporativo presenta formatos jarabe y sachet. Consulta disponibilidad con un asesor.'
   }
+
 };
 
 const modal = document.querySelector('#product-modal');
