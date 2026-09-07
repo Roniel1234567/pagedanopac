@@ -74,13 +74,13 @@ const products = {
 'nova-b': {
     name: 'Nova B Forte-K', category: 'Éticos', pill: 'pill-etico', image: 'assets/Novabfortekfoto.png',
     description: 'Combinación analgésica y antiinflamatoria de diclofenaco potásico con complejo vitamínico B1, B6 y B12.',
-    detail: 'Producto del portafolio ético de DANOPAC. Consulta disponibilidad y presentación con un asesor.'
+    detail: 'Ayuda a tratar artritis, dolor de codo, cuello, espalda, rodilla, pantorrilla y hombros. Consultar con un médico si el dolor persiste.'
   },
   
   'stop-grip': {
     name: 'Stop Grip', category: 'Éticos', pill: 'pill-etico', images: ['assets/STOPGRIPJARABE.png', 'assets/Stopgripcap.png'],
     description: 'Línea especializada en el alivio integral de síntomas de gripe, resfriados y congestión nasal.',
-    detail: 'El material corporativo presenta formatos jarabe y sachet. Consulta disponibilidad con un asesor.'
+    detail: 'Disponible en sus dos presentaciones járabe y sachet. Si los sintomas de la gripe persisten consulte con su doctor de confianza.'
   }
 
 };
