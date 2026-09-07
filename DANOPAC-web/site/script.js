@@ -95,14 +95,19 @@ function openProductModal(key) {
   const product = products[key];
   if (!product || !modal) return;
 
-  modalImage.className = 'modal-product-image';
-  if (product.image) {
-    modalImage.innerHTML = `<img src="${product.image}" alt="${product.name}">`;
-  } else {
-    modalImage.classList.add('modal-art');
-    const artLines = product.art.split('|').map((line, index) => index === 1 ? `<b>${line}</b>` : line).join('<br>');
-    modalImage.innerHTML = `<span>${artLines}</span>`;
-  }
+modalImage.className = 'modal-product-image';
+if (product.images) {
+  modalImage.innerHTML = product.images
+    .map((src) => `<img src="${src}" alt="${product.name}">`)
+    .join('');
+} else if (product.image) {
+  modalImage.innerHTML = `<img src="${product.image}" alt="${product.name}">`;
+} else {
+  modalImage.classList.add('modal-art');
+  const artLines = product.art.split('|').map((line, index) => index === 1 ? `<b>${line}</b>` : line).join('<br>');
+  modalImage.innerHTML = `<span>${artLines}</span>`;
+}
+  
   modalCategory.textContent = product.category;
   modalCategory.className = `category-pill ${product.pill}`;
   modalTitle.textContent = product.name;
