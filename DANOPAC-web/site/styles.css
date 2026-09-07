@@ -148,7 +148,7 @@ h1 em, h2 em { color: var(--red); font-family: 'DM Serif Display', Georgia, seri
 .product-card:hover .product-image img { transform: scale(1.05) rotate(-2deg); }
 .product-image-dawsy { background: #fff5df; }
 .product-image-dawsy::after { background: #f4ca6a; }
-.product-image-dawsy img { height: 216px; }
+.product-image-dawsy img { height: 250px; }
 .product-image-sachet { background: #f8e9da; }
 .product-image-sachet::after { background: #edb06e; }
 .product-image-sachet img { height: 250px; }
@@ -157,7 +157,7 @@ h1 em, h2 em { color: var(--red); font-family: 'DM Serif Display', Georgia, seri
 
 
 
-.product-image-fiber img { height: 190px; }
+.product-image-fiber img { height: 110px; }
 .product-image-slim { background: #f5e4ef; }
 .product-image-slim::after { background: #d99abd; }
 .product-image-slim img { height: 209px; }
