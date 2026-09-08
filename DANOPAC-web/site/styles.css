@@ -94,7 +94,7 @@ h1 em, h2 em { color: var(--red); font-family: 'DM Serif Display', Georgia, seri
 .product-tag { position: absolute; z-index: 3; left: -5px; top: -15px; padding: 6px 10px; color: var(--navy); background: var(--white); border-radius: 100px; font-size: 8px; font-weight: 800; letter-spacing: .09em; box-shadow: 0 8px 18px rgba(0,0,0,.13); white-space: nowrap; }
 .product-float-center .product-tag { top: -19px; left: 34px; color: var(--navy); background: var(--gold); }
 .product-float-right .product-tag { left: auto; right: -12px; top: -3px; }
-.visual-caption { position: absolute; left: 12px; right: 12px; bottom: 62px; z-index: 3; display: grid; grid-template-columns: 50px 1fr; column-gap: 11px; align-items: center; color: white; }
+.visual-caption { position: absolute; left: 90px; right: 12px; bottom: 62px; z-index: 3; display: grid; grid-template-columns: 50px 1fr; column-gap: 11px; align-items: center; color: white; }
 .visual-caption span { grid-row: span 2; width: 39px; height: 39px; display: grid; place-items: center; color: var(--gold); border: 1px solid rgba(241,191,84,.55); border-radius: 50%; font-size: 10px; }
 .visual-caption strong { font-size: 15px; letter-spacing: -.02em; }
 .visual-caption small { color: rgba(255,255,255,.65); font-size: 10px; }
