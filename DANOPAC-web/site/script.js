@@ -88,14 +88,14 @@ const products = {
     detail: 'Presentación en sachet de fácil administración. Si el dolor persiste o se agrava, consulte con su doctor de confianza.'
   },
   'dawsy-fat': {
-    name: 'Dawsy Fat', category: 'Éticos', pill: 'pill-etico', image: 'assets/DawsyFfoto.png',
+    name: 'Dawsy F', category: 'Éticos', pill: 'pill-etico', image: 'assets/DawsyFfoto.png',
     description: 'Orlistat, indicado para reducir la absorción de grasa como parte de un plan integral de control de peso.',
     detail: 'Recomendado junto a una dieta baja en grasas. Consulte con su doctor de confianza antes de iniciar el tratamiento.'
   },
   tiktan: {
     name: 'Tiktan', category: 'Éticos', pill: 'pill-etico', image: 'assets/Tiktanfoto.png',
     description: 'Sildenafil, tratamiento indicado para la disfunción eréctil masculina.',
-    detail: 'Uso bajo prescripción médica. Consulte con su doctor de confianza antes de iniciar el tratamiento.'
+    detail: 'Consulte con su doctor de confianza en caso de efectos secundarios y suspender el uso inmendiato del medicamento.'
   }
 
 };
