@@ -178,6 +178,24 @@ h1 em, h2 em { color: var(--red); font-family: 'DM Serif Display', Georgia, seri
   height: 190px; 
 }
 
+.product-image-geltrafem { background: #fdeaf1; }
+.product-image-geltrafem::after { background: #df7ba3; }
+.product-image-geltrafem img {
+  height: 205px;
+}
+
+.product-image-fat { background: #eaf3ea; }
+.product-image-fat::after { background: #7cb88a; }
+.product-image-fat img {
+  height: 205px;
+}
+
+.product-image-tiktan { background: #e6edfb; }
+.product-image-tiktan::after { background: #6f93d6; }
+.product-image-tiktan img {
+  height: 205px;
+}
+
 .product-info { padding: 16px 20px 21px; }
 .product-info h3 { color: var(--navy); font-size: 16px; letter-spacing: -.03em; margin-bottom: 7px; }
 .product-info p { min-height: 46px; color: var(--muted); font-size: 11px; line-height: 1.6; margin-bottom: 17px; }
