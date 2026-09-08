@@ -81,6 +81,21 @@ const products = {
     name: 'Stop Grip', category: 'Éticos', pill: 'pill-etico', images: ['assets/STOPGRIPJARABE.png', 'assets/Stopgripcap.png'],
     description: 'Línea especializada en el alivio integral de síntomas de gripe, resfriados y congestión nasal.',
     detail: 'Disponible en sus dos presentaciones járabe y sachet. Si los sintomas de la gripe persisten consulte con su doctor de confianza.'
+  },
+  geltrafem: {
+    name: 'Geltrafem', category: 'Éticos', pill: 'pill-etico', image: 'assets/GeltraFemfoto2.png',
+    description: 'Ácido mefenámico en sachet, formulado para el alivio del dolor menstrual y otros dolores leves a moderados.',
+    detail: 'Presentación en sachet de fácil administración. Si el dolor persiste o se agrava, consulte con su doctor de confianza.'
+  },
+  'dawsy-fat': {
+    name: 'Dawsy Fat', category: 'Éticos', pill: 'pill-etico', image: 'assets/DawsyFfoto.png',
+    description: 'Orlistat, indicado para reducir la absorción de grasa como parte de un plan integral de control de peso.',
+    detail: 'Recomendado junto a una dieta baja en grasas. Consulte con su doctor de confianza antes de iniciar el tratamiento.'
+  },
+  tiktan: {
+    name: 'Tiktan', category: 'Éticos', pill: 'pill-etico', image: 'assets/Tiktanfoto.png',
+    description: 'Sildenafil, tratamiento indicado para la disfunción eréctil masculina.',
+    detail: 'Uso bajo prescripción médica. Consulte con su doctor de confianza antes de iniciar el tratamiento.'
   }
 
 };
