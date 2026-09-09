@@ -15,6 +15,9 @@ if (menuToggle && mainNav) {
   });
 }
 
+/* ============================================
+   FILTRO DE PRODUCTOS — con animación escalonada
+   ============================================ */
 const filterButtons = document.querySelectorAll('.filter-button');
 const productCards = document.querySelectorAll('.product-card');
 
@@ -27,10 +30,53 @@ filterButtons.forEach((button) => {
       item.setAttribute('aria-selected', String(active));
     });
 
+    let visibleIndex = 0;
+
     productCards.forEach((card) => {
       const show = filter === 'all' || card.dataset.category === filter;
-      card.classList.toggle('is-hidden', !show);
+
+      // Quita cualquier animación previa para poder relanzarla
+      card.classList.remove('is-filtering-in');
+
+      if (show) {
+        card.classList.remove('is-hidden');
+        // Forzamos un pequeño reflow para poder reiniciar la animación
+        void card.offsetWidth;
+        card.style.animationDelay = `${visibleIndex * 60}ms`;
+        card.classList.add('is-filtering-in');
+        visibleIndex += 1;
+      } else {
+        card.classList.add('is-hidden');
+        card.style.animationDelay = '';
+      }
     });
+  });
+});
+
+/* ============================================
+   TILT 3D AL PASAR EL MOUSE SOBRE LAS TARJETAS
+   ============================================ */
+const TILT_MAX_DEG = 7;
+
+productCards.forEach((card) => {
+  card.style.transformStyle = 'preserve-3d';
+  card.style.willChange = 'transform';
+
+  card.addEventListener('mousemove', (event) => {
+    const rect = card.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateY = ((x - centerX) / centerX) * TILT_MAX_DEG;
+    const rotateX = -((y - centerY) / centerY) * TILT_MAX_DEG;
+
+    card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px) scale(1.015)`;
+  });
+
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
   });
 });
 
@@ -172,7 +218,19 @@ if (contactForm) {
 
 document.querySelector('#current-year').textContent = new Date().getFullYear();
 
+/* ============================================
+   REVEAL AL HACER SCROLL — con stagger automático
+   ============================================ */
 const revealItems = document.querySelectorAll('.reveal');
+
+// Aplica un pequeño retraso extra según la posición dentro de su contenedor,
+// para que grupos de elementos (como el product-grid) entren en cascada.
+document.querySelectorAll('.product-grid, .essence-values, .contact-list').forEach((group) => {
+  Array.from(group.children).forEach((child, index) => {
+    child.style.transitionDelay = `${index * 70}ms`;
+  });
+});
+
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver((entries, currentObserver) => {
     entries.forEach((entry) => {
